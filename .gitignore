@@ -24,6 +24,7 @@
 
 storage.googleapis.com
 runs/*
+!runs/train/
 !runs/models/
 !runs/models/**/
 !runs/models/**/readme.md
