@@ -1,0 +1,63 @@
+video0:
+  # 人员入侵
+  # 坐落位置
+  location: test
+  # 输入视频流
+  input: 'rtsp://10.10.20.106:9100/dss/monitor/param/cameraid=44011521991320401107%40966%240%26substream=1?token='
+  # 置信度
+  conf_thresh: 0.6
+  # 抽帧数量
+  skip_frames: 15
+  # 预警信息接口url
+  warning_url: 'http://10.166.33.194/icc/icc/event/subSystemCallCall'
+  # 检测目标
+  detect_goal: [0]
+  # 是否检测人员入侵
+  rq_status: True
+  # 是否检测人员离岗
+  lg_status: False
+  # 区域坐标
+  roi_areas: [[977,50],[895,490],[930,1225],[2545,1147],[2545,725],[1392,47],[985,55]]
+
+video1:
+  # 睡岗
+  # 坐落位置
+  location: test
+  # 输入视频流
+  input: 'I:\Myproject\test\test.mp4'
+  # 置信度
+  conf_thresh: 0.6
+  # 抽帧数量
+  skip_frames: 15
+  # 预警信息接口url
+  warning_url: 'http://8.138.127.55/icc/icc/event/subSystemCallCall'
+  # 检测目标
+  detect_goal: [17,18]
+  # 是否检测人员入侵
+  rq_status: False
+  # 是否检测人员离岗
+  lg_status: False
+  # 入侵区域坐标
+  roi_areas: [[629,996],[974,937],[820,776],[374,885]]
+
+
+video2:
+  # 火焰
+  # 坐落位置
+  location: test
+  # 输入视频流
+  input: 'I:\Myproject\test\test.mp4'
+  # 置信度
+  conf_thresh: 0.6
+  # 抽帧数量
+  skip_frames: 15
+  # 预警信息接口url
+  warning_url: 'http://10.100.100.210/aimp-admin/oapi/warn/'
+  # 检测目标
+  detect_goal: [5]
+  # 是否检测人员入侵
+  rq_status: False
+  # 是否检测人员离岗
+  lg_status: False
+  # 入侵区域坐标
+  roi_areas: [[629,996],[974,937],[820,776],[374,885]]

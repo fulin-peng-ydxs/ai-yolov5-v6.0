@@ -1,0 +1,23 @@
+lr0: 0.002
+momentum: 0.937
+weight_decay: 0.0005
+
+box: 0.05
+cls: 0.5
+obj: 1.0
+
+hsv_h: 0.005
+hsv_s: 0.5
+hsv_v: 0.4
+
+degrees: 0.0
+translate: 0.05
+scale: 0.3
+shear: 0.0
+
+flipud: 0.0
+fliplr: 0.5
+
+mosaic: 0.3
+mixup: 0.0
+copy_paste: 0.0

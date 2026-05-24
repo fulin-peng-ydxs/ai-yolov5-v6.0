@@ -1,0 +1,1 @@
+docker build -t gzzn.aimp.video:v0.0.7 .
